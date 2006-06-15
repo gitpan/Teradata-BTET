@@ -205,7 +205,7 @@ Xfetch(da, hash)
 	STRLEN		slen;
 	char *		sptr;
 	struct sqlda *	res_ptr;
-	long int	wint;
+	int		wint;
 	double		wdouble;
 	char		wstring[24];
     PPCODE:
@@ -229,7 +229,7 @@ Xfetch(da, hash)
 
 	      switch (ddesc[da].sqlvar[i].sqltype) {
 	       case INTEGER_N:
-	          wint = *((long *)res_ptr->sqlvar[i].sqldata) + 0;
+	          wint = *((int *)res_ptr->sqlvar[i].sqldata) + 0;
 	          XPUSHs(sv_2mortal(newSViv(wint)));
 	          break;
 	       case SMALLINT_N:

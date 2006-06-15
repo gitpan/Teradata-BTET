@@ -24,7 +24,7 @@ our %EXPORT_TAGS = ( 'all' => [ qw($activcount
 our @EXPORT_OK = ( @{ $EXPORT_TAGS{'all'} } );
 
 our @EXPORT = qw( $activcount $errorcode $errormsg );
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 #sub AUTOLOAD {
 #    # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -216,7 +216,7 @@ Teradata::BTET - Perl interface to Teradata in BTET mode
   $sth->fetchrow_list();
   $sth->close();
   $dbh->disconnect;
-  # And many others. See below.
+  # And others. See below.
 
 =head1 Description
 

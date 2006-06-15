@@ -125,7 +125,7 @@ int field_len (
    case DATE_N:
    case INTEGER_NN:
    case INTEGER_N:
-      return sizeof(long int);
+      return sizeof(int);
     /* NOTE: The determination of size etc. for DECIMAL varies
        by OS. The following code is for Solaris. */
    case DECIMAL_NN:

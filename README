@@ -1,4 +1,4 @@
-Teradata/BTET version 0.01
+Teradata/BTET version 0.02
 ==========================
 
 Teradata::BTET is a Perl interface to Teradata SQL. It does not attempt
